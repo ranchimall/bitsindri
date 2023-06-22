@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT Sindri Blockchain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="scripts/components.js"></script>
+</head>
+
+<body class="flex flex-direction-column">
+    <header class="flex">
+        <h1 class="flex align-items-center" style="font-size: 1rem;">
+            <svg class="icon" style="margin-right:0.3rem" viewBox="0 0 96 108" xml:space="preserve">
+                <path d="M90.2,102.5c-2.4-8.2-9.9-14.5-27.4-23.1c-7.1-3.5-11.8-6.2-14-8.3c-1.7-1.6-3.5-4-4.2-5.5c-0.7-1.7-0.7-5.5,0-7.5
+                        c1.3-3.6,2.6-5.2,12.9-15.1c6.2-5.9,9.3-10.3,11.1-15.5c0.7-2.1,0.8-7.6,0.2-9.4C66.5,12,61.7,6.7,53.7,1.6c-3-1.9-4.3-2.1-4.3-0.8
+                        c0,0.3-0.5,1.4-1,2.4l-1,1.8l-2.8-1.9c-1.5-1.1-3.4-2.2-4.1-2.6c-1.3-0.7-2.4-0.6-2.4,0.2c0,0.3-1.4,3.4-2,4.4
+                        c0,0.1-0.4-0.1-0.9-0.4c-6.1-4.4-8.7-5.5-8.7-3.9c0,0.7-1.8,4.2-4,7.9C16,19.5,9.4,24.9,2.6,24.9c-3,0-2.9-0.1-2,3.4
+                        c0.7,2.8,1.1,3.1,3.6,2.3c2.3-0.7,3.9-1.5,5.8-2.9c0.8-0.6,1.5-0.9,1.6-0.9c0.1,0.1,0.5,1,0.7,2.1s0.7,2,0.9,2.1
+                        c0.8,0.3,5.1-1.3,7.5-2.9l2.3-1.5l0.5,1.8c0.6,2.4,1,2.7,3.3,2.1c3.9-1,7.7-3.7,11.5-8.2l2-2.4l-0.2,2.1c-0.6,5.4-4.3,11.4-11.3,18
+                        c-1.8,1.7-4.7,4.5-6.5,6.2c-10.7,10.2-10,18.6,2,26.5c2.7,1.8,10.3,5.8,15.3,8c0.9,0.4,3.3,1.7,5.3,2.9c11,6.5,16.4,13.1,16.4,19.7
+                        c0,1.3,0.1,2.4,0.2,2.6l0,0c0.3,0.3,0.1,0.3,3-0.5c1.4-0.4,2.6-0.9,2.8-1.1c0.4-0.6-0.6-3.7-1.8-6.1c-1.3-2.5-5.6-7-8.9-9.4
+                        c-3.8-2.8-9.3-5.9-17-9.7c-8.5-4.2-11.8-6.2-14.7-9.1c-2.6-2.6-3.9-5.3-3.9-8.2c0-4.6,2.3-8.6,8.3-14.1c9.4-8.7,13-13,15.5-18.8
+                        c1.3-3,1.4-3.4,1.4-6.7c0-3.1-0.1-3.8-1.1-6l-1.1-2.4l1-1.6c0.5-0.9,1.2-2.1,1.5-2.6l0.5-1l1.5,2.1c1.8,2.6,3.2,6.8,3.2,9.3
+                        c0,1.7-0.6,4.7-1.4,6.4c-0.2,0.4-0.4,1-0.5,1.3c-0.1,0.3-1.1,2-2.2,3.7c-2,3-5.2,6.4-13.4,14.2c-5.7,5.4-7.6,8.6-7.8,13.1
+                        c-0.2,3.7,0.7,5.9,3.7,9.2c3.2,3.4,6.9,5.8,17.4,11c12.1,6,17.3,9.6,21.3,14.5c2.5,3.2,3.7,5.8,3.9,9.3c0.1,1.6,0.3,3,0.5,3
+                        c0.1,0.1,0.8,0,1.4-0.2s1.9-0.5,2.7-0.7l1.5-0.4l-0.2-1.5c-0.7-5.1-5.4-10.8-13.1-16c-4.4-2.9-5.8-3.7-17.3-9.4
+                        c-5.7-2.8-9.2-5.1-11.8-7.6c-4.3-4.2-5.1-8.8-2.7-13.9c1.4-2.8,2.7-4.4,12.5-13.8c8-7.7,11.4-13.7,11.4-20.1c0-5.1-2.3-9.9-6.9-14.3
+                        c-1.1-1-2-2-2.1-2.2c-0.2-0.4,1.5-3.9,1.9-3.9c1.2,0,7.8,6.3,9.7,9.2c2,3.3,2.5,5,2.5,8.9c0,3.9-0.6,5.9-2.9,9.8
+                        c-2.4,4.1-4.2,6-14.2,15.5c-3.4,3.2-5.7,6.1-6.9,8.7c-0.9,2-1.1,2.7-1.1,5.1c0,2.3,0.2,3.2,1,4.9c1.9,4,7.4,8.5,15.4,12.4
+                        c12.5,6.1,15.1,7.6,19.4,10.7c7.2,5.3,10.6,10.5,10.6,16c0,1.3,0.1,2.4,0.3,2.5c0.4,0.3,4.8-0.8,5.5-1.3
+                        C90.7,104.4,90.7,104.3,90.2,102.5z M20.3,23.3L20.3,23.3c-2,1-3.3,1.4-4.8,1.5L13.3,25l2.3-2.8c3.7-4.5,6.4-8.9,10-16
+                        c0.9-1.8,1.8-3.5,2-3.6c0.4-0.4,2.6,1.1,5.1,3.4l2.1,1.9l-1.9,2.8C28.2,17.5,24.5,21.2,20.3,23.3z M39.3,17.4
+                        c-1.2,1.7-6.5,5.7-8.6,6.5v0c-1.1,0.4-2.8,0.8-3.9,0.9L24.9,25l2.1-2.6c2.5-3.1,5.1-7,7-10.4c0.7-1.4,1.4-2.5,1.5-2.6
+                        c0.3-0.4,1.7,1.4,3,4.1l1.5,3L39.3,17.4z M44.6,10c-0.7,1.2-1.4,2.1-1.5,2.1c-0.1,0-1.5-1.4-3-3l-2.8-3l0.6-1.5
+                        c1.1-2.6,1.3-2.7,3.4-1c1.9,1.5,4.5,3.8,4.5,4.1C45.8,7.8,45.3,8.9,44.6,10z"></path>
+            </svg>
+            RanchiMall
+        </h1>
+        <theme-toggle></theme-toggle>
+    </header>
+    <section id="main_banner" class="flex gap-1 align-items-center hidden ">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+            viewBox="0 0 24 24" width="24px" fill="#000000">
+            <g>
+                <rect fill="none" height="24" width="24" x="0" />
+                <polygon points="14.43,10 12,2 9.57,10 2,10 8.18,14.41 5.83,22 12,17.31 18.18,22 15.83,14.41 22,10" />
+            </g>
+        </svg>
+        <strong id="banner_content"></strong>
+    </section>
+    <section id="hero_section" class="grid">
+        <div class="grid gap-0-5">
+            <h1>
+                BIT Sindri Blockchain Project
+            </h1>
+            <p>
+                <strong>Tokenization of</strong> <strong>Internship</strong> <br> Coding, Design, Marketing, and more...
+            </p>
+        </div>
+        <div id="token_price_wrapper"
+            class="flex flex-direction-column gap-0-5 align-items-center justify-content-center">
+            <strong id="token_price" style="font-size: 2rem; line-height: 1;"></strong>
+            <p class="flex flex-direction-column gap-0-5 justify-content-center">
+                Price per bitsindri# token (Dynamic)
+            </p>
+        </div>
+        
+        
+    </section>
+    <main>
+        <div class="app">
+            <div class="app__icon">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <rect fill="none" height="24" width="24" y="0" />
+                    <path
+                        d="M7,20h4c0,1.1-0.9,2-2,2S7,21.1,7,20z M5,19h8v-2H5V19z M16.5,9.5c0,3.82-2.66,5.86-3.77,6.5H5.27 C4.16,15.36,1.5,13.32,1.5,9.5C1.5,5.36,4.86,2,9,2S16.5,5.36,16.5,9.5z M21.37,7.37L20,8l1.37,0.63L22,10l0.63-1.37L24,8 l-1.37-0.63L22,6L21.37,7.37z M19,6l0.94-2.06L22,3l-2.06-0.94L19,0l-0.94,2.06L16,3l2.06,0.94L19,6z" />
+                </svg>
+            </div>
+            <h2>
+                Blockchain addresses
+            </h2>
+            
+            <p>
+                <strong>FLO multisig address:</strong> 
+                <sm-copy value="esKDDUQkDHuEu582JpJ85LAXWCs4b2cmfo" ></sm-copy>
+                
+                
+                <p>
+                    <strong>Bitcoin multisig address:</strong> 
+                    <sm-copy value="bc1q5rhrg8j7guzr5hz83mh9hkzqcg2k9e48wdgg9fzh44h96hzf7r4sqxxlgn" ></sm-copy>
+                    
+                </p>
+            </p>
+
+            <p><strong>Multisig owners</strong></p>
+            <p>
+                <strong>Address1</strong>
+                <sm-copy value="FNtsQdfWJCiZAXEsRxwME6TWKqBweCk6NH" ></sm-copy>
+                
+            </p>
+            <p>
+                <strong>Address2</strong> 
+                <sm-copy value="F7tCsvBeb5KJCSANTbm75h1q6YRipqzMc3" ></sm-copy>
+                
+                
+            </p>
+            <p>
+                <strong>Address3</strong>
+                <sm-copy value="FCxFMn4PuMCXZTKZ2T34DJ1T5LhHySvkvr" ></sm-copy>
+                
+                
+            </p>
+           
+        
+        </div>
+
+        <div class="app">
+            <div class="app__icon">
+                <svg class="icon" width="128" height="128" viewBox="0 0 128 128" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M53.9259 91.8519C74.8718 91.8519 91.8519 74.8718 91.8519 53.9259C91.8519 51.3022 91.5854 48.7407 91.0782 46.2671C94.5628 51.5181 96.5926 57.8183 96.5926 64.5926C96.5926 82.9203 81.7351 97.7778 63.4074 97.7778C55.2385 97.7778 47.759 94.8262 41.9771 89.9312C45.7338 91.1773 49.7511 91.8519 53.9259 91.8519ZM41.9771 89.9312C26.8858 84.9256 16 70.697 16 53.9259C16 32.98 32.98 16 53.9259 16C72.2481 16 87.5358 28.9926 91.0782 46.2671C85.1352 37.3115 74.9608 31.4074 63.4074 31.4074C45.0797 31.4074 30.2222 46.2649 30.2222 64.5926C30.2222 74.7514 34.7869 83.844 41.9771 89.9312Z"
+                        fill="#4F56FF" />
+                    <circle cx="101" cy="101" r="11" fill="#4F56FF" />
+                </svg>
+            </div>
+            
+            <h2>
+                Details of token
+            </h2>
+           
+            <p>
+                There are 100,000,000 tokens in this project.
+            </p>
+            <p>
+                The incorporation address is <sm-copy style="min-width: 0;"
+                    value="FADxyTczco2X9s4MpL7okrVR7ZmGzwJqJ5"></sm-copy>
+            </p>
+            <a href="https://ranchimall.github.io/floscout/#/token/bitsindri" target="_blank" class="ext-link">
+                BIT Sindri token
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <g>
+                        <rect fill="none" height="24" width="24" />
+                    </g>
+                    <g>
+                        <polygon points="6,6 6,8 14.59,8 5,17.59 6.41,19 16,9.41 16,18 18,18 18,6" />
+                    </g>
+                </svg>
+            </a>
+
+        </div>
+
+        
+        <div class="app">
+            <div class="app__icon">
+                <svg class="icon" width="128" height="128" viewBox="0 0 128 128" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M53.9259 91.8519C74.8718 91.8519 91.8519 74.8718 91.8519 53.9259C91.8519 51.3022 91.5854 48.7407 91.0782 46.2671C94.5628 51.5181 96.5926 57.8183 96.5926 64.5926C96.5926 82.9203 81.7351 97.7778 63.4074 97.7778C55.2385 97.7778 47.759 94.8262 41.9771 89.9312C45.7338 91.1773 49.7511 91.8519 53.9259 91.8519ZM41.9771 89.9312C26.8858 84.9256 16 70.697 16 53.9259C16 32.98 32.98 16 53.9259 16C72.2481 16 87.5358 28.9926 91.0782 46.2671C85.1352 37.3115 74.9608 31.4074 63.4074 31.4074C45.0797 31.4074 30.2222 46.2649 30.2222 64.5926C30.2222 74.7514 34.7869 83.844 41.9771 89.9312Z"
+                        fill="#4F56FF" />
+                    <circle cx="101" cy="101" r="11" fill="#4F56FF" />
+                </svg>
+            </div>
+            
+            <h2>
+                Details of smart contract
+            </h2>
+           
+            <p>
+                Token swap between bitsindri# and inr#
+            </p>
+            <p>
+                The smart contract creator address is <sm-copy style="min-width: 0;"
+                    value="FA2TkNwVpoEBDYJBrQ7HkP8S6rACwtv4bX"></sm-copy>
+            </p>
+            <a href="https://ranchimall.github.io/floscout/#/contract/bitsindri-inr-FA2TkNwVpoEBDYJBrQ7HkP8S6rACwtv4bX" target="_blank" class="ext-link">
+                Smart contract address and transactions
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <g>
+                        <rect fill="none" height="24" width="24" />
+                    </g>
+                    <g>
+                        <polygon points="6,6 6,8 14.59,8 5,17.59 6.41,19 16,9.41 16,18 18,18 18,6" />
+                    </g>
+                </svg>
+            </a>
+
+        </div>
+
+        <div class="app">
+            <div class="app__icon">
+                <svg class="icon" width="128" height="128" viewBox="0 0 128 128" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M75.9466 56.32C74.2933 62.9333 64 59.5733 60.8 58.6667L63.7333 47.04C67.04 48 77.6533 49.3867 75.9466 56.32ZM59.36 64.64L56.16 77.4933C60.1066 78.5067 72.32 82.4 74.1333 75.1467C76.0533 67.5733 63.3066 65.6 59.36 64.64ZM115.733 76.9067C108.587 105.493 79.68 122.88 51.0933 115.733C22.5066 108.587 5.13597 79.68 12.2666 51.0933C19.4133 22.5067 48.32 5.14133 76.9066 12.2667C105.44 19.4133 122.827 48.32 115.733 76.9067ZM75.7866 42.9333L78.1866 33.3333L72.32 32L69.9733 41.2267C68.4266 40.8533 66.88 40.48 65.28 40.16L67.6266 30.72L61.8133 29.3333L59.4133 38.88C58.1333 38.56 56.8533 38.2933 55.68 37.9733L47.6266 35.9467L46.0266 42.1867C46.0266 42.1867 50.4 43.2 50.2933 43.2533C52.6933 43.84 53.12 45.3333 53.0133 46.6667L46.4533 72.96C46.1866 73.7067 45.3333 74.6667 43.7866 74.4C43.84 74.4533 39.52 73.3333 39.52 73.3333L36.64 80L44.2133 81.92C45.6533 82.2933 47.04 82.6667 48.4266 82.9867L45.9733 92.6933L51.84 94.1867L54.24 84.5333C55.84 84.96 57.3866 85.3333 58.88 85.76L56.48 95.3067L62.3466 96.8L64.8 87.0933C74.6666 88.96 82.24 88.2133 85.3333 79.2C88 72 85.3333 67.7333 80 65.0133C83.84 64 86.72 61.6 87.52 56.3733C88.5866 49.28 83.1466 45.4933 75.7866 42.9333Z"
+                        fill="#FFBF5E" />
+                </svg>
+            </div>
+            <h2>
+                Bitcoin-based bank account
+            </h2>
+            <p>
+                Multi-user Bitcoin bank account that holds assets for the project. <br>
+                All assets are owned by token holders.
+            </p>
+            <div class="grid gap-1">
+                
+            </div>
+            <a href="https://ranchimall.github.io/btcwallet/#/check_details?query=bc1q5rhrg8j7guzr5hz83mh9hkzqcg2k9e48wdgg9fzh44h96hzf7r4sqxxlgn"
+                target="_blank" class="ext-link">
+                Bitcoin multisig account
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <g>
+                        <rect fill="none" height="24" width="24" />
+                    </g>
+                    <g>
+                        <polygon points="6,6 6,8 14.59,8 5,17.59 6.41,19 16,9.41 16,18 18,18 18,6" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        <div class="app">
+            <div class="app__icon">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"/></svg>
+            </div>
+            <h2>
+                Token swap smart contract
+            </h2>
+            <p>
+                Participants holding bitsindri# can swap it with inr# <br>
+                inr# must be available in smart contract through participation
+            </p>
+            <div class="grid gap-1">
+                
+            </div>
+            <a href="https://ranchimall.github.io/flowallet/#/smartcontracts/deposit?scName=bitsindri-inr&scAddress=FA2TkNwVpoEBDYJBrQ7HkP8S6rACwtv4bX"
+                target="_blank" class="ext-link">
+                Swap tokens
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <g>
+                        <rect fill="none" height="24" width="24" />
+                    </g>
+                    <g>
+                        <polygon points="6,6 6,8 14.59,8 5,17.59 6.41,19 16,9.41 16,18 18,18 18,6" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        
+            
+        <div class="app">
+            <div class="app__icon">
+                <svg class="icon" width="128" height="128" viewBox="0 0 128 128" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="16" y="30" width="19.8621" height="67.8621" rx="2" fill="#6CFFCA" />
+                    <path
+                        d="M92.1379 63.1035H112V95.8621C112 96.9666 111.105 97.8621 110 97.8621H94.1379C93.0334 97.8621 92.1379 96.9666 92.1379 95.8621V63.1035Z"
+                        fill="#5C42FF" />
+                    <path
+                        d="M54.069 58.1379H73.931V95.8621C73.931 96.9666 73.0356 97.8621 71.931 97.8621H56.069C54.9644 97.8621 54.069 96.9666 54.069 95.8621V58.1379Z"
+                        fill="#5C42FF" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16 63.1034C16.4381 47.4889 29.2335 34.9655 44.9539 34.9655C60.6744 34.9655 73.4698 47.4889 73.9078 63.1034H54.0201C53.602 58.4636 49.7025 54.8276 44.9538 54.8276C40.2051 54.8276 36.3056 58.4636 35.8875 63.1034H16Z"
+                        fill="#6CFFCA" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M111.977 63.1034C111.539 47.4889 98.7433 34.9655 83.0229 34.9655C67.3025 34.9655 54.507 47.4889 54.069 63.1034H73.9564C74.3745 58.4636 78.274 54.8276 83.0227 54.8276C87.7715 54.8276 91.6709 58.4636 92.0891 63.1034H111.977Z"
+                        fill="#5C42FF" />
+                </svg>
+            </div>
+            <h2>
+                Messenger for multisig
+            </h2>
+            <p>
+                <strong>Multisig</strong> is used to distribute BTC or FLO <br>
+                <strong>Multisig</strong> is also used to receive funding in BTC or FLO for the project <br>
+                <strong>Users</strong> can create their own multisig to manage their BTC or FLO balance <br>
+                <strong>Messenger</strong> is also used for communicating between FLO or BTC addresses
+            </p>
+            <div class="grid gap-1">
+                
+            </div>
+            <a href="https://ranchimall.github.io/messenger"
+                target="_blank" class="ext-link">
+                Use Messenger
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <g>
+                        <rect fill="none" height="24" width="24" />
+                    </g>
+                    <g>
+                        <polygon points="6,6 6,8 14.59,8 5,17.59 6.41,19 16,9.41 16,18 18,18 18,6" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        <div class="app">
+            <div class="app__icon">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <g>
+                        <rect fill="none" height="24" width="24" />
+                    </g>
+                    <g>
+                        <g>
+                            <path
+                                d="M21,8c-1.45,0-2.26,1.44-1.93,2.51l-3.55,3.56c-0.3-0.09-0.74-0.09-1.04,0l-2.55-2.55C12.27,10.45,11.46,9,10,9 c-1.45,0-2.27,1.44-1.93,2.52l-4.56,4.55C2.44,15.74,1,16.55,1,18c0,1.1,0.9,2,2,2c1.45,0,2.26-1.44,1.93-2.51l4.55-4.56 c0.3,0.09,0.74,0.09,1.04,0l2.55,2.55C12.73,16.55,13.54,18,15,18c1.45,0,2.27-1.44,1.93-2.52l3.56-3.55 C21.56,12.26,23,11.45,23,10C23,8.9,22.1,8,21,8z" />
+                            <polygon points="15,9 15.94,6.93 18,6 15.94,5.07 15,3 14.08,5.07 12,6 14.08,6.93" />
+                            <polygon points="3.5,11 4,9 6,8.5 4,8 3.5,6 3,8 1,8.5 3,9" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+        
+    
+
+            <h2>
+                Statistics
+            </h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>No. of students</th>
+                        <th>Amount earned</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coding</td>
+                        <td>14</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
+                        <td>11</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>5</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Project Scouting</td>
+                        <td>3</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Content Writing</td>
+                        <td>5</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Investment & Finance</td>
+                        <td>10</td>
+                        <td>1000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="https://ranchimall.github.io/flologsheet/#/sheet_view?id=FFTKE6oKmc7ER6EuuyMJD4Ftxk6pAzrrTB"
+                target="_blank" class="ext-link">
+                Check participants details
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <g>
+                        <rect fill="none" height="24" width="24" />
+                    </g>
+                    <g>
+                        <polygon points="6,6 6,8 14.59,8 5,17.59 6.41,19 16,9.41 16,18 18,18 18,6" />
+                    </g>
+                </svg>
+            </a>
+            <a href="https://ranchimall.github.io/flologsheet/#/sheet_view?id=F9vmpV3DPBbMoKab71CNBk839YekrUBZVQ"
+            target="_blank" class="ext-link">
+            Task tracker for participants
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                viewBox="0 0 24 24" width="24px" fill="#000000">
+                <g>
+                    <rect fill="none" height="24" width="24" />
+                </g>
+                <g>
+                    <polygon points="6,6 6,8 14.59,8 5,17.59 6.41,19 16,9.41 16,18 18,18 18,6" />
+                </g>
+            </svg>
+        </a>
+        </div>
+
+        <div class="app">
+            <div class="app__icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path
+                            d="M36.402 5.228L39.418 5.592C38.794 8.296 37.9447 11.468 36.87 15.108C35.83 18.7133 34.8767 21.6427 34.01 23.896C33.1433 26.1147 32.19 28.3333 31.15 30.552C30.1447 32.736 29.07 34.4693 27.926 35.752C26.782 37 25.6727 37.624 24.598 37.624C23.5233 37.624 22.726 37.2253 22.206 36.428C21.7207 35.6307 21.478 34.2267 21.478 32.216C21.478 30.1707 21.7727 25.9067 22.362 19.424C22.9513 12.9067 23.246 9.37066 23.246 8.816C23.2807 8.22667 23.142 7.932 22.83 7.932C22.4487 7.932 21.998 8.46933 21.478 9.544C20.958 10.584 20.5593 11.3813 20.282 11.936C19.554 13.5653 19.086 14.7093 18.878 15.368C16.9367 19.736 15.2033 23.3413 13.678 26.184C12.1527 29.0267 10.402 31.6613 8.426 34.088C7.73267 34.92 6.74467 35.7693 5.462 36.636C4.17933 37.5027 2.98333 38.1613 1.874 38.612L0.73 35.544C3.60733 34.3307 6.20733 32.2333 8.53 29.252C10.8527 26.236 13.2447 22.0413 15.706 16.668C18.202 11.2947 19.9873 7.672 21.062 5.8C22.2753 3.824 23.506 2.836 24.754 2.836C25.5513 2.836 26.1753 3.11333 26.626 3.668C27.0767 4.22267 27.302 4.95067 27.302 5.852C27.302 6.71867 26.99 10.3587 26.366 16.772C25.7767 23.1853 25.482 27.2933 25.482 29.096C25.482 30.8987 25.5513 32.0773 25.69 32.632C25.8633 33.152 26.1407 33.412 26.522 33.412C27.0073 33.412 27.5273 32.892 28.082 31.852C29.9887 28.1427 32.762 19.268 36.402 5.228Z"
+                            fill="#16A34A" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="40" height="40" fill="white" />
+                        </clipPath>
+                    </defs>
+                    <style xmlns="" id="autoconsent-prehide" />
+                </svg>
+            </div>
+            <h2>
+                Justnote
+            </h2>
+            <p>
+                Store your Bitcoin and FLO private key here
+            </p>
+            <p>Here is a <a style="display: inline;" href="https://www.youtube.com/watch?v=hYMVsUh_Cic"
+                    target="_blank">video
+                    tutorial</a> to get you started</p>
+            <a href="https://justnote.cc/" target="_blank" class="ext-link">
+                Open
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <g>
+                        <rect fill="none" height="24" width="24" />
+                    </g>
+                    <g>
+                        <polygon points="6,6 6,8 14.59,8 5,17.59 6.41,19 16,9.41 16,18 18,18 18,6" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="app">
+            <div class="app__icon">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #175DDC;
+                        }
+
+                        .st1 {
+                            fill: #FFFFFF;
+                        }
+                    </style>
+                    <path id="Background" class="st0"
+                        d="M1024,864c0,88.4-71.6,160-160,160H160C71.6,1024,0,952.4,0,864V160C0,71.6,71.6,0,160,0h704  c88.4,0,160,71.6,160,160V864z" />
+                    <path id="Identity" class="st1"
+                        d="M829.8,128.6c-6.5-6.5-14.2-9.7-23-9.7H217.2c-8.9,0-16.5,3.2-23,9.7c-6.5,6.5-9.7,14.2-9.7,23  v393.1c0,29.3,5.7,58.4,17.1,87.3c11.4,28.8,25.6,54.4,42.5,76.8c16.9,22.3,37,44.1,60.4,65.3c23.4,21.2,45,38.7,64.7,52.7  c19.8,14,40.4,27.2,61.9,39.7c21.5,12.5,36.8,20.9,45.8,25.3c9,4.4,16.3,7.9,21.7,10.2c4.1,2,8.5,3.1,13.3,3.1c4.8,0,9.2-1,13.3-3.1  c5.5-2.4,12.7-5.8,21.8-10.2c9-4.4,24.3-12.9,45.8-25.3c21.5-12.5,42.1-25.7,61.9-39.7c19.8-14,41.4-31.6,64.8-52.7  c23.4-21.2,43.5-42.9,60.4-65.3c16.9-22.4,31-47.9,42.5-76.8c11.4-28.8,17.1-57.9,17.1-87.3V151.7  C839.6,142.8,836.3,135.1,829.8,128.6z M753.8,548.4c0,142.3-241.8,264.9-241.8,264.9V203.1h241.8  C753.8,203.1,753.8,406.1,753.8,548.4z" />
+                </svg>
+            </div>
+            <h2>
+                Bitwarden
+            </h2>
+            <p>
+                Alternate app to securely store your Bitcoin and FLO private key
+            </p>
+            <a href="https://bitwarden.com/" target="_blank" class="ext-link">
+                Open
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                    viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <g>
+                        <rect fill="none" height="24" width="24" />
+                    </g>
+                    <g>
+                        <polygon points="6,6 6,8 14.59,8 5,17.59 6.41,19 16,9.41 16,18 18,18 18,6" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+
+
+
+       
+    </main>
+    <script>
+        const roomTokenPrice = 1;
+        const tokensNeeded = 0;
+        function formatCurrency(amount) {
+            return amount.toLocaleString('en-IN', {
+                style: 'currency',
+                currency: 'INR',
+                minimumFractionDigits: 0,
+            });
+        }
+        // fetch data and return json
+        async function fetchJSON(url, options = {}) {
+            const response = await fetch(url, options)
+            const json = await response.json()
+            if (response.ok) {
+                return json
+            } else {
+                throw new Error(json.description)
+            }
+        }
+        window.onload = function () {
+            document.getElementById('banner_content').textContent = `Looking for sellers. ₹{tokensNeeded} tokenroom# @ ₹{formatCurrency(roomTokenPrice)}`;
+            if (tokensNeeded > 0)
+                document.getElementById('main_banner').classList.remove('hidden');
+            
+            
+                document.getElementById('token_price').textContent = formatCurrency(roomTokenPrice);
+        }
+    </script>
+</body>
+
+</html>
